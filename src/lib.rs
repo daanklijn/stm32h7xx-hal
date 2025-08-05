@@ -125,6 +125,10 @@ pub use stm32h7::stm32h7b3 as stm32;
 #[cfg(feature = "stm32h735")]
 pub use stm32h7::stm32h735 as stm32;
 
+// High Speed
+#[cfg(feature = "stm32h723")]
+pub use stm32h7::stm32h723 as stm32;
+
 #[cfg(all(feature = "rm0433", feature = "rm0399"))]
 compile_error!("Cannot not select both rm0433 and rm0399");
 
